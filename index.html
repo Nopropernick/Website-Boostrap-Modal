@@ -299,8 +299,8 @@
             </div>
             <div class="modal-body">
               <p class="lead">Fill out this form and we will get back to you.</p>
-              <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
+              <form action="/success.html" method="POST" data-netlify="true" netlify>
+                <input type="hidden" name="form-name" value="enrollForm">
                 <div class="mb-3">
                     <label for="first-name" class="col-form-label">First name</label>
                     <input class="form-control" id="first-name">
@@ -311,16 +311,16 @@
                 </div>
                 <div class="mb-3">
                     <label for="email" class="col-form-label">Email</label>
-                    <input class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div><div class="mb-3">
                     <label for="phone" class="col-form-label">Phone</label>
                     <input class="form-control" id="phone">
                 </div>
+                <button type="submit" class="btn btn-primary" >Submit</button>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary" >Submit</button>
             </div>
           </div>
         </div>
